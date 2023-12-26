@@ -1,0 +1,238 @@
+@font-face {
+  font-family: RobotoBlack;
+  src: url(../RESOURCES/FONTS/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../RESOURCES/FONTS/Roboto-Regular.ttf);
+}
+.signUpTerminal {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80em;
+  width: 60em;
+  border-radius: 3.5em;
+  box-shadow: 2em 2em 4em #ABA9B2, -2em -2em 4em #D5D4D9;
+}
+.signUpTerminal p {
+  position: absolute;
+  left: 50%;
+  bottom: 2em;
+  transform: translateX(-50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.5em;
+  font-family: RobotoRegular;
+  font-weight: 600;
+  white-space: nowrap;
+  color: black;
+}
+.signUpTerminal p a {
+  color: orangered;
+  text-decoration: none;
+}
+.signUpTerminal p a:hover {
+  cursor: pointer;
+}
+.signUpTerminal .logo {
+  position: absolute;
+  top: 9em;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 16em;
+  width: 16em;
+  outline: 3px solid black;
+  outline-offset: -1em;
+  border-radius: 50%;
+  box-shadow: 1.5em 1.5em 3em #ABA9B2, -1.5em -1.5em 3em #D5D4D9;
+}
+.signUpTerminal .logo .logoIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+  color: black;
+}
+
+.parameterBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 12em;
+  height: 33em;
+  width: 100%;
+}
+.parameterBox input {
+  width: 312px;
+  height: 56px;
+  border-radius: 4em;
+  padding-left: 2em;
+  border: none;
+  box-shadow: inset 0.15em 0.15em 0.3em #ABA9B2, inset -0.15em -0.15em 0.3em #D5D4D9;
+  font-family: RobotoRegular;
+  font-weight: 600;
+  background-color: #C0BEC5;
+}
+.parameterBox input::-moz-placeholder {
+  color: black;
+}
+.parameterBox input::placeholder {
+  color: black;
+}
+.parameterBox input:focus {
+  outline: none;
+  box-shadow: inset 0.3em 0.3em 0.6em #ABA9B2, inset -0.3em -0.3em 0.6em #D5D4D9;
+}
+.parameterBox input:-webkit-autofill,
+.parameterBox input:-webkit-autofill:hover,
+.parameterBox input:-webkit-autofill:focus,
+.parameterBox input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.parameterBox button {
+  height: 56px;
+  width: 312px;
+  font-family: RobotoBlack;
+  margin-top: 2em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4em;
+}
+.parameterBox button span {
+  font-size: 1.3em;
+}
+.parameterBox button:hover {
+  cursor: pointer;
+}
+
+.logInTerminal {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80em;
+  width: 60em;
+  border-radius: 3.5em;
+  box-shadow: 2em 2em 4em #ABA9B2, -2em -2em 4em #D5D4D9;
+}
+.logInTerminal .logo {
+  position: absolute;
+  top: 9em;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 16em;
+  width: 16em;
+  outline: 3px solid black;
+  outline-offset: -1em;
+  border-radius: 50%;
+  box-shadow: 1.5em 1.5em 3em #ABA9B2, -1.5em -1.5em 3em #D5D4D9;
+}
+.logInTerminal .logo .logoIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8em;
+  color: black;
+}
+.logInTerminal input {
+  width: 312px;
+  height: 56px;
+  border-radius: 4em;
+  padding-left: 2em;
+  border: none;
+  box-shadow: inset 0.15em 0.15em 0.3em #ABA9B2, inset -0.15em -0.15em 0.3em #D5D4D9;
+  font-family: RobotoRegular;
+  font-weight: 600;
+  background-color: #C0BEC5;
+}
+.logInTerminal input::-moz-placeholder {
+  color: black;
+}
+.logInTerminal input::placeholder {
+  color: black;
+}
+.logInTerminal input:focus {
+  outline: none;
+  box-shadow: inset 0.3em 0.3em 0.6em #ABA9B2, inset -0.3em -0.3em 0.6em #D5D4D9;
+}
+.logInTerminal input:-webkit-autofill,
+.logInTerminal input:-webkit-autofill:hover,
+.logInTerminal input:-webkit-autofill:focus,
+.logInTerminal input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.logInTerminal .logInForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 27em;
+}
+.logInTerminal .logInForm button {
+  height: 56px;
+  width: 312px;
+  font-family: RobotoBlack;
+  margin-top: 3em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4em;
+  cursor: pointer;
+}
+.logInTerminal .logInForm button span {
+  font-size: 1.3em;
+}
+.logInTerminal p {
+  position: absolute;
+  left: 50%;
+  bottom: 2em;
+  transform: translateX(-50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.5em;
+  font-family: RobotoRegular;
+  font-weight: 600;
+  white-space: nowrap;
+  color: black;
+}
+.logInTerminal p a {
+  color: orangered;
+  text-decoration: none;
+}
+.logInTerminal p a:hover {
+  cursor: pointer;
+}
+
+.logInTerminalHidden {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #C0BEC5;
+  color: white;
+  font-size: 8px;
+}/*# sourceMappingURL=style.css.map */

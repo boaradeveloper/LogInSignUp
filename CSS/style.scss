@@ -1,0 +1,22 @@
+@import '../CSS/variables';
+@import '../CSS/fonts';
+@import '../CSS/mixins';
+
+@import '../CSS/COMPONENTS/signUpTerminal';
+@import '../CSS/COMPONENTS/logInTerminal';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $primaryColor;
+    color: white;
+    font-size: 8px;
+}

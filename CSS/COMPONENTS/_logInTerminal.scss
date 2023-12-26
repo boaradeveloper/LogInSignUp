@@ -1,0 +1,100 @@
+.logInTerminal {
+    @include terminalSettings;
+
+    .logo {
+        position: absolute;
+        top: 9em;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 16em;
+        width: 16em;
+        outline: 3px solid black;
+        outline-offset: -1em;
+        border-radius: 50%;
+        box-shadow: 1.5em 1.5em 3em $shadowColor,
+                    -1.5em -1.5em 3em $secondaryShadowColor;
+
+        .logoIcon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 8em;
+            color: black;
+        }
+    }
+
+    input {
+        @include signUpElementsSettings;
+    }
+
+    input::placeholder {
+        color: black;
+    }
+
+    input:focus {
+        outline: none;
+        box-shadow: inset 0.3em 0.3em 0.6em $shadowColor,
+                    inset -0.3em -0.3em 0.6em $secondaryShadowColor;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .logInForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 27em;
+
+        button {
+            height: $signUpelementsHeight;
+            width: $signUpElementsWidth;
+            font-family: RobotoBlack;
+            margin-top: 3em;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 4em;
+            cursor: pointer;
+
+            span {
+                font-size: 1.3em;  
+            }
+        }
+    }
+
+    p {
+        position: absolute;
+        left: 50%;
+        bottom: 2em;
+        transform: translateX(-50%);
+        width: fit-content;
+        font-size: 2.5em;
+        font-family: RobotoRegular;
+        font-weight: 600;
+        white-space: nowrap;
+        color: black;
+
+        a {
+            color: orangered;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.logInTerminalHidden {
+    display: none;
+}
